@@ -1,3 +1,5 @@
+@use '/src/sass/base/variables.scss'as *;
+
 h1,
 h2,
 h3,
@@ -7,13 +9,13 @@ figure,
 p,
 ol,
 ul {
-	margin: 0;
+    margin: 0;
 }
 
 ol[role="list"],
 ul[role="list"] {
-	list-style: none;
-	padding-inline: 0;
+    list-style: none;
+    padding-inline: 0;
 }
 
 h1,
@@ -21,13 +23,13 @@ h2,
 h3,
 h4,
 h5 {
-	font-size: inherit;
-	font-weight: inherit;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 img {
-	display: block;
-	max-inline-size: 100%;
+    display: block;
+    max-inline-size: 100%;
 }
 
 // :root {
@@ -46,8 +48,12 @@ img {
 // }
 
 html {
-	font-family: "Barlow", sans-serif;
-	scroll-behavior: smooth;
+    font-family: "Barlow", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $light;
 }
 
 .container {
