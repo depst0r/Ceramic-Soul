@@ -1,11 +1,7 @@
-// LIBS
 @use '/src/sass/libs/modern-normalize.min.css';
 @use '/src/sass/libs/fontello.css';
-// VARIB
-@use '/src/sass/base/variables.scss' as *;
+@use '/src/sass/base/variables.scss'as *;
 // @use '/src/sass/pxtorem.scss' as *;
-//base
 @use '/src/sass/base/basic.scss';
-//blocks
 @use '/src/sass/blocks/promo.scss';
 @use '/src/sass/blocks/header.scss';
