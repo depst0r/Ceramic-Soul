@@ -43,7 +43,7 @@
             padding-inline: 0;
             padding-top: 250px;
             padding-left: 71px;
-            text-align: left;
+            text-align: left !important;
         }
     } 
 }
@@ -55,11 +55,13 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 460px;
+            width: clamp(450px, 37.5vw, 640px);
             height: 633px;
+            object-fit: cover;
         }
         &__title {
             padding-left: 571px;
+            text-align: left !important;
         }
     }
 }
@@ -76,6 +78,13 @@
         }
         &__btn {
             margin: 50px auto 0 auto;
+        }
+        &__title {
+            padding-top: 384px;
+            padding-left: 642px;
+        }
+        &__potter {
+            height: 900px;
         }
     }
 }
