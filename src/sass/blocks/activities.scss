@@ -34,6 +34,7 @@
         }
         &__text {
             margin-top: 25px;
+            font-size: 20px;
         }
     }
 }
@@ -54,6 +55,21 @@
         }
         &__col {
             padding: 0 10px;
-        } 
+        }
+        &__img {
+            margin-top: 60px;
+            object-fit: cover;
+        }
+        &__text {
+            &_fixed {
+                width: 556px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .activities {
+        padding-top: 100px;
     }
 }
