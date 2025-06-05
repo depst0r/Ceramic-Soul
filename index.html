@@ -91,10 +91,28 @@
 				</div>
 				<div class="pure-u-1 pure-u-xl-1-2 pure-u-xxl-3-5">
 					<form action="#">
-						<fieldset>
-							<input type="text">
-							<input type="text">
+						<fieldset class="touch__fieldset">
+							<div class="touch__input-block">
+								<label class="touch__label" for="name">Name</label>
+								<input 
+									class="touch__input"
+									type="text" 
+									id="name" 
+									name="name" 
+									placeholder="Name">
+							</div>
+							<div class="touch_-input-block">
+								<label class="touch__label" for="email">Email</label>
+								<input
+									class="touch__input"
+									type="email" 
+									id="email" 
+									name="email" 
+									placeholder="Email">
+							</div>
 						</fieldset>
+						<label for="">Your question</label>
+						<textarea name="question" id="question"></textarea>
 					</form>
 				</div>
 			</div>
