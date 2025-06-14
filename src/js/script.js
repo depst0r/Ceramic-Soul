@@ -18,8 +18,8 @@ try {
             clickable: true,
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
+            nextEl: '.icon-right-open',
+            prevEl: '.icon-left-open'
         },
         loop: true,
         spaceBetween: 10,
@@ -29,7 +29,7 @@ try {
                 spaceBetween: 5
             },
             1920: {
-                slidesPerView: 5,
+                slidesPerView: 3,
                 spaceBetween: 35
             },
         },
