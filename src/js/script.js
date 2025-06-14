@@ -13,6 +13,14 @@ import 'purecss/build/grids-responsive-min.css';
 const swiper = new Swiper('.swiper', {
     modules: [Navigation, Pagination],
     slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
     loop: true,
     spaceBetween: 10,
     breakpoints: {
@@ -24,5 +32,5 @@ const swiper = new Swiper('.swiper', {
             slidesPerView: 5,
             spaceBetween: 35
         },
-    }
+    },
 });
