@@ -40,7 +40,7 @@
         width: 100vw;
         height: 100vh;
         background-color: $light;
-        transition: all 3s;
+        transition: all 1s;
         opacity: 0;
 
         &_active {
@@ -130,6 +130,10 @@
             text-transform: uppercase;
             text-decoration: none;
             color: $dark;
+        }
+
+        &__menu {
+            display: none;
         }
     }
 
