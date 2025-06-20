@@ -9,6 +9,7 @@ import "/src/sass/style.scss";
 import 'purecss/build/grids-min.css';
 import 'purecss/build/grids-responsive-min.css';
 
+//!Burger-menu
 const burger = document.querySelector(".burger"),
     close = document.querySelector(".header__menu-close"),
     menu = document.querySelector(".header__menu");
@@ -25,8 +26,8 @@ const burgerMenu = (open, close, menu) => {
     })
 }
 
-burgerMenu(burger, close, menu)
 
+//!Swiper
 try {
     new Swiper('.works__slider', {
         modules: [Navigation, Pagination],
@@ -56,3 +57,4 @@ try {
     console.log(error)
 }
 
+burgerMenu(burger, close, menu)
