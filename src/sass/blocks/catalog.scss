@@ -1,0 +1,29 @@
+@use '/src/sass/base/variables.scss'as *;
+
+.catalog {
+    padding-top: 50px;
+
+    &__title {
+        margin-top: 60px;
+    }
+
+    &__tabs {
+        display: flex;
+        column-gap: 50px;
+        row-gap: 13px;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        border: 1px solid $dark;
+        padding: 13px 35px;
+    }
+
+    &__tab {
+        border: none;
+        background: transparent;
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #000;
+        padding: 0;
+    }
+}
