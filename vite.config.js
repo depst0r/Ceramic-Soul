@@ -10,6 +10,8 @@ export default defineConfig({
 			input: {
 				main: resolve(__dirname, "index.html"),
 				catalog: resolve(__dirname, "/pages/catalog.html"),
+				blog: resolve(__dirname, "/pages/blog.html"),
+				about: resolve(__dirname, "/pages/about.html"),
 			},
 		},
 	},
