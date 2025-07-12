@@ -1,5 +1,6 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
+import JustValidate from 'just-validate';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -8,6 +9,7 @@ import 'swiper/css/pagination';
 import "/src/sass/style.scss";
 import 'purecss/build/grids-min.css';
 import 'purecss/build/grids-responsive-min.css';
+
 
 //!Burger-menu
 const burger = document.querySelector(".burger"),
@@ -75,6 +77,29 @@ try {
     console.log(error)
 }
 
+//!Form
 
+try {
+    const validator = new JustValidate('.touch__form');
+    validator.addField('#name', [
+        {
+            rule: 'required',
+        },
+        {
+            rule: 'minLength',
+            value: 2,
+        }
+    ])
+        .addField('#email', [
+            {
+                rule: 'required',
+            },
+            {
+                rule: 'email',
+            }
+        ])
+} catch (e) {
+
+}
 
 burgerMenu(burger, close, menu)
