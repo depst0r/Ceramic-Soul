@@ -1,6 +1,7 @@
 @use '/src/sass/base/variables.scss'as *;
 
-.touch {
+.touch,
+.footer {
     .just-validate-error-field {
         border: none;
         outline: 1px solid $ui-error;

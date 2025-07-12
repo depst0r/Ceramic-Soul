@@ -124,4 +124,29 @@ try {
 
 }
 
+try {
+    const validatorFooter = new JustValidate('.footer__form');
+    validatorFooter
+        .addField('.footer__input', [
+            {
+                rule: 'required',
+            },
+            {
+                rule: 'email',
+            }
+        ])
+        .addField('#footer__checkbox', [
+            {
+                rule: 'required',
+            },
+        ], {
+            errorsContainer: document
+                .querySelector('#footer__checkbox').parentElement.parentElement
+                .querySelector('.checkbox-error-message'),
+        })
+
+} catch (e) {
+
+}
+
 burgerMenu(burger, close, menu)
