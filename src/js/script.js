@@ -80,16 +80,18 @@ try {
 //!Form
 
 try {
-    const validator = new JustValidate('.touch__form');
-    validator.addField('#name', [
-        {
-            rule: 'required',
-        },
-        {
-            rule: 'minLength',
-            value: 2,
-        }
-    ])
+    const validator = new JustValidate('form');
+    validator
+        .addField('#name', [
+            {
+                rule: 'required',
+                errorMessage: 'Поле имя пользователя, не может быть пустым',
+            },
+            {
+                rule: 'minLength',
+                value: 2,
+            }
+        ])
         .addField('#email', [
             {
                 rule: 'required',
@@ -98,6 +100,26 @@ try {
                 rule: 'email',
             }
         ])
+        .addField('#question', [
+            {
+                rule: 'required',
+            },
+            {
+                rule: 'minLength',
+                value: 5,
+            }
+        ], {
+            errorsContainer: document.querySelector('#question').parentElement.querySelector('.error-message'),
+        })
+        .addField('#checkbox', [
+            {
+                rule: 'required',
+            },
+        ], {
+            errorsContainer: document
+                .querySelector('#checkbox').parentElement.parentElement
+                .querySelector('.checkbox-error-message'),
+        })
 } catch (e) {
 
 }
