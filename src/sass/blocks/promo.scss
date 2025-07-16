@@ -74,9 +74,23 @@
         }
 
         &__cta {
-            animation-name: slideIn;
-            animation-duration: 3s;
+            // animation-name: slideIn;
+            // animation-duration: 3s;
+            animation: slideIn 3s;
         }
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+
+
+
+    100% {
+        transform: translateX(0);
+
     }
 }
 
