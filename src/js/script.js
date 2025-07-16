@@ -121,7 +121,16 @@ try {
                 .querySelector('.checkbox-error-message'),
         })
         .onSuccess((event) => {
-            event.currentTarget.submit();
+            const form = event.currentTarget;
+            const formData = new FormData(form);
+
+            fetch('https://httpbin.org/post', {
+                method: 'POST',
+                body: formData,
+            }).then(res => res.json()).then(data => {
+                console.log('Success', data)
+                form.reset()
+            })
         })
 } catch (e) {
 
