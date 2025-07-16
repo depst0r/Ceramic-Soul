@@ -120,6 +120,9 @@ try {
                 .querySelector('#checkbox').parentElement.parentElement
                 .querySelector('.checkbox-error-message'),
         })
+        .onSuccess((event) => {
+            event.currentTarget.submit();
+        })
 } catch (e) {
 
 }
