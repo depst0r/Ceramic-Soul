@@ -6,6 +6,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+import 'animate.css';
+
 import "/src/sass/style.scss";
 import 'purecss/build/grids-min.css';
 import 'purecss/build/grids-responsive-min.css';
@@ -129,7 +131,7 @@ try {
                 body: formData,
             }).then(res => res.json()).then(data => {
                 console.log('Success', data)
-                form.reset()
+                form.reset();
             })
         })
 } catch (e) {
